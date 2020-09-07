@@ -18,6 +18,7 @@ import post1 from '../Organims/blog-post.1.md';
 import post2 from '../Organims/blog-post.2.md';
 import post3 from '../Organims/blog-post.3.md';
 import Blogpost1 from './Blogpost1';
+import InfoAsian from './InfoAsian';
 
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
@@ -100,17 +101,12 @@ export default function Asian() {
             <Main title="From the firehose" posts={posts} />
          
           </Grid> */}
-            <Grid item xs={12} md={8}>
+            <Grid item xs={12} md={12}>
       <Typography variant="h6" gutterBottom>
-        Asian
+        Fashion
       </Typography>
       <Divider />
-      <Blogpost1 />
-      {/* {posts.map((post) => (
-        <Markdown className={classes.markdown} key={post.substring(0, 40)}>
-          {post}
-        </Markdown>
-      ))} */}
+       <InfoAsian />
     </Grid>
         </main>
       </Container>
