@@ -83,7 +83,8 @@ export default function Design() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="lg">
+      <Container maxWidth="lg">        
+       <Header title="Mahu blog"  />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>

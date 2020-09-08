@@ -17,9 +17,7 @@ import Page404 from './Pages/Page404'
 
 const App = () => (
   <Router>
-    <Header title="Mahu blog"  />
-    <Switch>
-      
+    <Switch>      
     <Route  path="/" exact component={Blog} />
     <Route  path="/moda"  component={Blog} />
     <Route  path="/moda/asian"  component={Asian} />
