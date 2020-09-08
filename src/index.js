@@ -11,13 +11,18 @@ import {
   
   } from './Redux/actionCreators';
 
-store.dispatch(
-      
-        listBrand()
-      )
+  const root = document.getElementById("root")
 
-ReactDOM.render(
-  <Provider store={store}>
-  <App />
-</Provider>
-, document.getElementById('root'));
+ReactDOM.render(<App />, root);
+
+
+// store.dispatch(
+      
+//         listBrand()
+//       )
+
+// ReactDOM.render(
+//   <Provider store={store}>
+//   <App />
+// </Provider>
+// , document.getElementById('root'));

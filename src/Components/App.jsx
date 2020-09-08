@@ -17,18 +17,24 @@ import Asian from './Organims/Asian';
 const App = () => (
   <Router>
     <Header title="Mahu blog"  />
-    {/* <Navegation/> */}
     <Switch>
-    {/* <Route  path="/" exact component={Home} /> */}
     <Route  path="/" exact component={Blog} />
     <Route  path="/moda" exact component={Blog} />
     <Route  path="/moda/asian" exact component={Asian} />
     <Route  path="/belleza" exact component={Design} />
-{/* 
-    <Route path="/login" exact component={Login}/>
-    <Route path="/register" exact component={Register}/> */}
+    <Route component={() => (
+        <div className="ed-grid">
+          <h1>Error 404</h1>
+          <span>Página no encontrada</span>  
+        </div>
+      )} />  
     </Switch>
   </Router>
 )
 
 export default App;
+
+
+{/* 
+    <Route path="/login" exact component={Login}/>
+    <Route path="/register" exact component={Register}/> */}
