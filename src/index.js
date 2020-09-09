@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/App.scss'
 //import './index.css';
-import App from './Components/App';
+import App from './Components/App.jsx';
 import {Provider} from 'react-redux'
 import store from './Redux/store'
 import {        

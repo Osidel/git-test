@@ -11,15 +11,12 @@ const Navegation = () => (
         
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/blog">Blog</Nav.Link>
-            {/* {
+            <Nav className="mr-auto">              
+            {
               localStorage.getItem('token') ?
               <PrivateMenu /> :
               <PublicMenu />
-            } */}
+            }
           </Nav>
           <Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
