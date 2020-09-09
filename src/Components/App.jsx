@@ -1,5 +1,6 @@
 import React from 'react'
-import {BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom"
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+// import { BrowserRouter as Switch, Router, Route } from 'react-router-dom'
 import logo from '../../src/logo.svg';
 //import './App.css';
 //import Login from "./Pages/Login"
@@ -16,15 +17,15 @@ import Page404 from './Pages/Page404'
 //import Public from "./Routes/Public"
 
 const App = () => (
-  <Router>
-    <Switch>      
+  <BrowserRouter>
+    <Switch>
     <Route  path="/" exact component={Blog} />
-    <Route  path="/moda"  component={Blog} />
-    <Route  path="/moda/asian"  component={Asian} />
-    <Route  path="/belleza"  component={Design} /> 
+    <Route  path="/moda" exact component={Blog} />
+    <Route  path="/moda/asian" exact component={Asian} />
+    <Route  path="/belleza" exact component={Design} /> 
     <Route component={Page404} />
     </Switch>
-  </Router>
+  </BrowserRouter>
 )
 
 export default App;
